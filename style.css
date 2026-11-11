@@ -1,0 +1,172 @@
+
+/* GENERAL SETTINGS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4ff;
+    color: #263238;
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+header {
+    background-color: #173b63;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+header h1 {
+    letter-spacing: 2px;
+}
+
+/* BUTTON */
+
+button {
+    background-color: #f0c75e;
+    color: #173b63;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: white;
+}
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
+
+section h2 {
+    color: #173b63;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #d6e3f0;
+}
+
+/* PROFILE */
+
+.profile {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #173b63;
+}
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #173b63;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #b8c9d9;
+    padding: 12px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #eaf4ff;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #173b63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* DARK MODE */
+
+.dark-mode {
+    background-color: #17212b;
+    color: white;
+}
+
+.dark-mode section {
+    background-color: #263747;
+    color: white;
+}
+
+.dark-mode section h2 {
+    color: #f0c75e;
+}
+
+.dark-mode hr {
+    border-color: #526577;
+}
+
+.dark-mode tr:nth-child(even) {
+    background-color: #35495c;
+}
+
+.dark-mode td {
+    color: white;
+}
+
+/* MOBILE SCREEN */
+
+@media screen and (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+}
